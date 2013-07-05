@@ -1,0 +1,24 @@
+# Python bytecode:
+*.py[co]
+
+# Packaging files:
+*.egg*
+dist
+
+# Editor temp files:
+*.swp
+*~
+
+# Sphinx docs:
+build
+files
+
+# SQLite3 database files:
+*.db
+
+# Logs:
+*.log
+
+.env
+.vagrant
+.idea
