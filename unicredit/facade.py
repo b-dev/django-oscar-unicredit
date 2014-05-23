@@ -53,7 +53,7 @@ def get_unicredit_url(order_number, total, host=None, scheme='https'):
 
     # La password reale viene usata solo per la generazione del mac. Nell'url finale va passata una password finta
     stringa_urlencodata = urllib.urlencode(url_parameters)
-    stringa_urlencodata = stringa_urlencodata.replace("password=9999888", "password=xxxxx")
+    stringa_urlencodata = stringa_urlencodata.replace("password=%s" % settings.UNICREDIT_PASSWORD, "password=xxxxx")
 
     # Genero l'url finale da chiamare aggiungendo l'urlencode del mac
     url_unicredit = stringa_urlencodata + "&mac=%s" % urllib.quote_plus(mac)

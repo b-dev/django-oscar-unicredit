@@ -10,7 +10,7 @@ To release a new version to PyPi:
 from setuptools import setup, find_packages
 
 setup(name='django-oscar-unicredit',
-      version="0.1",
+      version="0.1.1",
       url='https://github.com/marcominutoli/django-oscar-unicredit',
       author="Marco Minutoli",
       author_email="info@marcominutoli.it",
